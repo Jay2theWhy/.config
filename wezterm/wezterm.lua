@@ -57,6 +57,7 @@ local appearance = get_appearance()
 config.colors = colors_for_appearance(appearance)
 config.color_scheme = scheme_for_appearance(appearance)
 config.window_decorations = get_window_decorations()
+config.harfbuzz_features = { "calt=0", "clig=0", "liga=0" }
 
 -- Window and tab configs
 config.enable_tab_bar = true
