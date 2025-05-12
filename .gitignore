@@ -8,3 +8,4 @@
 # Folder exceptions
 !/gh
 !/nvim
+!/wezterm
