@@ -3,6 +3,7 @@
 
 # General exceptions
 !.gitignore
+!README.md
 
 # Folder exceptions
 !/gh
