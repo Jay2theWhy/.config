@@ -1,0 +1,9 @@
+# Ignore everything
+/*
+
+# General exceptions
+!.gitignore
+
+# Folder exceptions
+!/gh
+!/nvim
