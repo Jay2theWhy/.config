@@ -51,7 +51,7 @@ local config = wezterm.config_builder()
 -- This is where you actually apply your config choices
 
 -- Appearance, colors, and themes
-config.font_size = 14
+config.font_size = 16
 config.font = wezterm.font("JetBrainsMono Nerd Font")
 local appearance = get_appearance()
 config.colors = colors_for_appearance(appearance)
