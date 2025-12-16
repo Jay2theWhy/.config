@@ -25,10 +25,24 @@ local function colors_for_appearance(appearance)
 	return {
 		background = "rgba(44, 73, 65, 0.75)",
 		tab_bar = {
-			background = "rgba(44, 73, 65, 0.75)",
+			background = "rgba(100, 120, 110, 1)",
+			active_tab = {
+				bg_color = "rgba(44, 73, 65, 0.75)",
+				fg_color = "rgba(193, 216, 123, 1)",
+				intensity = "Bold",
+				underline = "Single",
+			},
+			inactive_tab = {
+				bg_color = "rgba(100, 120, 110, 1)",
+				fg_color = "rgba(189, 207, 200, 1)",
+				italic = true,
+			},
 		},
+		split = "rgba(193, 216, 123)",
 	}
 end
+-- chalkai colours
+-- background:
 
 local function get_window_decorations()
 	if wezterm.target_triple:match("darwin") or wezterm.target_triple:match("linux") then
@@ -61,8 +75,8 @@ config.harfbuzz_features = { "calt=0", "clig=0", "liga=0" }
 
 -- Window and tab configs
 config.enable_tab_bar = true
-config.use_fancy_tab_bar = true
-config.tab_bar_at_bottom = false
+config.use_fancy_tab_bar = false
+config.tab_bar_at_bottom = true
 config.line_height = 1.1
 config.window_padding = {
 	top = 0,
