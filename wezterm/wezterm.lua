@@ -30,7 +30,7 @@ local function colors_for_appearance(appearance)
 				bg_color = "rgba(44, 73, 65, 0.75)",
 				fg_color = "rgba(193, 216, 123, 1)",
 				intensity = "Bold",
-				underline = "Single",
+				underline = "Double",
 			},
 			inactive_tab = {
 				bg_color = "rgba(100, 120, 110, 1)",
@@ -77,7 +77,7 @@ config.harfbuzz_features = { "calt=0", "clig=0", "liga=0" }
 config.enable_tab_bar = true
 config.use_fancy_tab_bar = false
 config.tab_bar_at_bottom = true
-config.line_height = 1.1
+config.line_height = 1
 config.window_padding = {
 	top = 0,
 	bottom = 0,
