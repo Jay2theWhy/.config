@@ -147,11 +147,12 @@ Leader is `<Space>`.
 | `<leader>w` / `<leader>q` | save / quit |
 | `jk` (insert) | escape |
 | `<leader>e` / `<leader>r` | netrw sidebar / netrw in current window |
+| `<leader>R` (in netrw) | refresh listing (replaces netrw's `<C-l>`, which moves right instead) |
 | `<leader>o` / `<leader>p` | vertical / horizontal split |
 | `<C-h/j/k/l>` | move between windows |
 | `<C-arrows>` | resize windows |
 | `<leader>ff` `fg` `fb` `fs` `fc` | telescope: files, grep, buffers, git status, git commits |
 | `<leader>a` / `<leader>h` | harpoon: add file / menu |
-| `<C-h><C-h/j/k/l>` | harpoon: jump to file 1–4 |
+| `<leader>1`–`<leader>4` | harpoon: jump to file 1–4 |
 | `<leader>f` | format file/selection |
 | `<C-Space>` / `<BS>` | expand / shrink treesitter selection |
