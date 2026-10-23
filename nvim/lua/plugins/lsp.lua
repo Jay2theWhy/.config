@@ -29,7 +29,14 @@ registry.refresh(function()
 	for _, name in ipairs(ensure_installed) do
 		local pkg = registry.get_package(name)
 		if not pkg:is_installed() and not pkg:is_installing() then
-			pkg:install()
+			-- Failures are otherwise only visible in :MasonLog
+			pkg:install({}, function(success, err)
+				if not success then
+					vim.schedule(function()
+						vim.notify(("mason: failed to install %s\n%s"):format(name, tostring(err)), vim.log.levels.WARN)
+					end)
+				end
+			end)
 		end
 	end
 end)
