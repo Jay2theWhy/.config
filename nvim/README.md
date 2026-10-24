@@ -140,19 +140,32 @@ nvim-pack-lock.json      pinned plugin revisions (commit this)
 
 ## Keymaps
 
-Leader is `<Space>`.
+Leader is `<Space>`. Run `:map` (or `:nmap <leader>`) to list them with descriptions.
 
 | Keys | Action |
 |---|---|
 | `<leader>w` / `<leader>q` | save / quit |
 | `jk` (insert) | escape |
 | `<leader>e` / `<leader>r` | netrw sidebar / netrw in current window |
-| `<leader>R` (in netrw) | refresh listing (replaces netrw's `<C-l>`, which moves right instead) |
-| `<leader>o` / `<leader>p` | vertical / horizontal split |
+| `<C-r>` (in netrw) | refresh listing (netrw's own `<C-l>` is remapped to move right) |
+| `<leader>\|` / `<leader>-` | split right / split below |
 | `<C-h/j/k/l>` | move between windows |
-| `<C-arrows>` | resize windows |
-| `<leader>ff` `fg` `fb` `fs` `fc` | telescope: files, grep, buffers, git status, git commits |
+| `<M-arrows>` | resize windows by 2 (left Option in WezTerm; `<C-arrows>` belong to macOS Spaces) |
+| `<leader>ff` `fg` `fb` | telescope: files, grep, buffers |
+| `<leader>gs` / `<leader>gc` | telescope: git status / git commits |
 | `<leader>a` / `<leader>h` | harpoon: add file / menu |
 | `<leader>1`–`<leader>4` | harpoon: jump to file 1–4 |
-| `<leader>f` | format file/selection |
+| `<leader>cf` | format file/selection |
 | `<C-Space>` / `<BS>` | expand / shrink treesitter selection |
+
+LSP keymaps are Neovim 0.12's built-in defaults:
+
+| Keys | Action |
+|---|---|
+| `K` | hover documentation |
+| `grn` / `gra` | rename / code action |
+| `grr` / `gri` / `grt` | references / implementation / type definition |
+| `gO` | document symbols |
+| `<C-]>` | go to definition |
+| `[d` / `]d` / `<C-w>d` | previous / next / show diagnostic |
+| `<C-s>` (insert) | signature help |
